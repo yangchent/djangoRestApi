@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'corsheaders',# cors
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
     'dj_rest_auth',
     'dj_rest_auth.registration', 
     # for creating social media authentication view
@@ -157,6 +157,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication', 
     ],
 }
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
