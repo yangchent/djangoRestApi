@@ -18,3 +18,12 @@
     ╰─> [25 lines of output]
 
 ### solution 
+delete requirement.txt and create a new requirement
+install django, run server and install all the dependencies and than 
+`pip freeze > requirements.txt`
+
+
+### solution to fix heroku version with python 3.10.5
+install heroku cli 
+set heroku 22
+`heroku stack:set heroku-22`
