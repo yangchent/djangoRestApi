@@ -25,8 +25,8 @@ class BoutiqueAPIView(generics.ListAPIView):
 
 class BoutiqueDetailsAPIView(generics.RetrieveAPIView):
     permission_classes = (IsAuthorOrReadOnly,) # not needed but in future
-    queryset = Restaurant.objects.all()
-    serializer_class = RestaurantSerializer
+    queryset = Boutique.objects.all()
+    serializer_class = BoutiqueSerializer
 
 class NgoAPIView(generics.ListAPIView):
     queryset = Ngo.objects.all()
