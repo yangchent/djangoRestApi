@@ -41,3 +41,4 @@ urllib3==1.26.11
 waitress==2.1.2
 Werkzeug==2.2.1
 whitenoise==6.2.0
+pillow==9.2.0
