@@ -1,0 +1,13 @@
+services: 
+- type: web
+  name: djangotutorial
+  env: python
+  buildCommand: "./build.sh"        # ensure it's a string
+  startCommand: cd mysite && gunicorn mysite.wsgi:application
+  repo: https://github.com/sw-yx/django-quick-start.git # optional
+  # plan: standard # optional
+  healthCheckPath: /
+  # autoDeploy: false             # optional
+  envVars:
+  - key: SECRET_KEY
+    generateValue: true   
